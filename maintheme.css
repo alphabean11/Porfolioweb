@@ -27,9 +27,13 @@ a {
 	overflow: hidden;
 }
 
+
+
+/* Header */
+
 #topdiv {
 	height: 40%;
-	width: 640px;
+	width: 680px;
 	min-height: 245px;
 }
 
@@ -38,43 +42,172 @@ p.header {
 	text-align: center;
 	position: relative;
 	top: 60%;
+
+	animation-name: floating2;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
 }
 
 
+
+
+/* Navigation Bar */
+
 nav {
-	width: 640px;
+	width: 680px;
 	height: 40%;
 	min-height: 280px;
 	padding: 30px 0px 30px 0px;
+}
+
+@keyframes floating {
+    0%   {transform: translate3d(0px, 0px, 0px) rotate(0deg);}
+    25%  {transform: translate3d(1px, 2px, 0px) rotate(0deg);}
+    50%  {transform: translate3d(2px, 1px, 0px) rotate(0deg);}
+    75%  {transform: translate3d(0px, 1px, 0px) rotate(0deg);}
+    100% {transform: translate3d(0px, 0px, 0px) rotate(0deg);}
+}
+
+@keyframes floating2 {
+    0%   {transform: translate3d(0px, 0px, 0px) rotate(0deg);}
+    25%  {transform: translate3d(2px, 1px, 0px) rotate(0deg);}
+    50%  {transform: translate3d(1px, 2px, 0px) rotate(0deg);}
+    75%  {transform: translate3d(1px, 0px, 0px) rotate(0deg);}
+    100% {transform: translate3d(0px, 0px, 0px) rotate(0deg);}
+}
+
+@keyframes floating3 {
+    0%   {transform: translate3d(0px, 0px, 0px) rotate(0deg);}
+    25%  {transform: translate3d(2px, 1px, 0px) rotate(0deg);}
+    50%  {transform: translate3d(1px, 2px, 0px) rotate(0deg);}
+    75%  {transform: translate3d(0px, 1px, 0px) rotate(0deg);}
+    100% {transform: translate3d(0px, 0px, 0px) rotate(0deg);}
 }
 
 #floating-nav {
 	width: 250px;
 	height: 50px;
 	line-height: 50px;
+	position: relative;
+	transform: translate3d(0px, 0px, 0px) rotate(0deg);
 
 	background: gray;  /* For browsers that do not support gradients */
-    background: linear-gradient(rgba(230, 230, 230, 0.5), rgba(89, 89, 89, 0.5)); /* Standard syntax */ 
+    background: rgba(89, 89, 89, 0.2); /* Standard syntax */ 
 	/*background-color: rgba(150, 150, 150, 0.5);*/
 
 	border-radius: 30px;
 	border: 1px solid rgba(89, 89, 89, 1.0);
-	box-shadow: 0 3px 10px #737373;
+	box-shadow: 0 3px 10px #595959;
 
 	margin: 30px auto;
 	text-align: center;
 	padding: 0px;
+
+	animation-name: floating;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-delay: 0.3s;
+
+    transition: background .7s, box-shadow 0.5s, transform 0.5s;
+    transition-timing-function: ease;
 }
 
 #floating-nav:hover {
-	background: orange;  /* For browsers that do not support gradients */
-    background: linear-gradient(rgba(255, 214, 153, 0.9), rgba(255, 153, 0, 0.9)); /* Standard syntax */ 
+	background: rgba(200, 200, 200, 0.2);  /* For browsers that do not support gradients */
+    /*background: linear-gradient(rgba(255, 214, 153, 0.9), rgba(255, 153, 0, 0.9)); /* Standard syntax */ 
+
+	transform: translate3d(0px, -5px, 0px) rotate(0deg);
+
+	box-shadow: 0 5px 10px #595959;
+	-webkit-animation: 0;
+}
+
+#floating-nav2 {
+	width: 250px;
+	height: 50px;
+	line-height: 50px;
+	position: relative;
+
+	background: gray;  /* For browsers that do not support gradients */
+    background: rgba(240, 240, 240, 0.3); /* Standard syntax */ 
+	/*background-color: rgba(150, 150, 150, 0.5);*/
+
+	border-radius: 30px;
+	border: 1px solid rgba(50, 50, 50, 1.0);
+	box-shadow: 0 3px 10px #595959;
+
+	margin: 30px auto;
+	text-align: center;
+	padding: 0px;
+
+	animation-name: floating2;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-delay: 0.3s;
+
+    transition: all 0.5s;
+    transition-timing-function: ease;
+}
+
+#floating-nav2:hover {
+	background: rgba(240, 240, 240, 0.5);  /* For browsers that do not support gradients */
+    /*background: linear-gradient(rgba(255, 214, 153, 0.9), rgba(255, 153, 0, 0.9)); /* Standard syntax */ 
+
+	transform: translate3d(0px, -5px, 0px) rotate(0deg);
+
+	box-shadow: 0 5px 10px #595959;
+	-webkit-animation: 0;
+}
+
+#floating-nav3 {
+	width: 250px;
+	height: 50px;
+	line-height: 50px;
+	position: relative;
+
+	background: gray;  /* For browsers that do not support gradients */
+    background: rgba(240, 240, 240, 0.3); /* Standard syntax */ 
+	/*background-color: rgba(150, 150, 150, 0.5);*/
+
+	border-radius: 30px;
+	border: 1px solid rgba(50, 50, 50, 1.0);
+	box-shadow: 0 3px 10px #595959;
+
+	margin: 30px auto;
+	text-align: center;
+	padding: 0px;
+
+	animation-name: floating3;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-delay: 0.3s;
+
+    transition: all 0.5s;
+    transition-timing-function: ease;
+}
+
+#floating-nav3:hover {
+	background: rgba(240, 240, 240, 0.5);  /* For browsers that do not support gradients */
+    /*background: linear-gradient(rgba(255, 214, 153, 0.9), rgba(255, 153, 0, 0.9)); /* Standard syntax */ 
+
+	transform: translate3d(0px, -5px, 0px) rotate(0deg);
+
+	box-shadow: 0 5px 10px #595959;
+	-webkit-animation: 0;
 }
 
 #floating-nav-text {
 	font-size: 20px;
 	color: black;
 }
+
+
+
+/* Footer */
 
 #bottomdiv {
 	height: 10%;
