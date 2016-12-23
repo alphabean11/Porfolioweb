@@ -42,11 +42,6 @@ p.header {
 	text-align: center;
 	position: relative;
 	top: 60%;
-
-	animation-name: floating2;
-    animation-duration: 20s;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear;
 }
 
 
@@ -61,29 +56,29 @@ nav {
 	padding: 30px 0px 30px 0px;
 }
 
-@keyframes floating {
+/*@keyframes floating {
     0%   {transform: translate3d(0px, 0px, 0px) rotate(0deg);}
-    25%  {transform: translate3d(1px, 2px, 0px) rotate(0deg);}
-    50%  {transform: translate3d(2px, 1px, 0px) rotate(0deg);}
-    75%  {transform: translate3d(0px, 1px, 0px) rotate(0deg);}
+    25%  {transform: translate3d(3px, 6px, 0px) rotate(0deg);}
+    50%  {transform: translate3d(6px, 3px, 0px) rotate(0deg);}
+    75%  {transform: translate3d(0px, 4px, 0px) rotate(0deg);}
     100% {transform: translate3d(0px, 0px, 0px) rotate(0deg);}
 }
 
 @keyframes floating2 {
     0%   {transform: translate3d(0px, 0px, 0px) rotate(0deg);}
-    25%  {transform: translate3d(2px, 1px, 0px) rotate(0deg);}
+    25%  {transform: translate3d(2px, 1px, 0px) rotate(-1deg);}
     50%  {transform: translate3d(1px, 2px, 0px) rotate(0deg);}
-    75%  {transform: translate3d(1px, 0px, 0px) rotate(0deg);}
+    75%  {transform: translate3d(1px, 0px, 0px) rotate(1deg);}
     100% {transform: translate3d(0px, 0px, 0px) rotate(0deg);}
 }
 
 @keyframes floating3 {
     0%   {transform: translate3d(0px, 0px, 0px) rotate(0deg);}
     25%  {transform: translate3d(2px, 1px, 0px) rotate(0deg);}
-    50%  {transform: translate3d(1px, 2px, 0px) rotate(0deg);}
+    50%  {transform: translate3d(1px, 2px, 0px) rotate(1deg);}
     75%  {transform: translate3d(0px, 1px, 0px) rotate(0deg);}
     100% {transform: translate3d(0px, 0px, 0px) rotate(0deg);}
-}
+}*/
 
 #floating-nav {
 	width: 250px;
@@ -104,11 +99,11 @@ nav {
 	text-align: center;
 	padding: 0px;
 
-	animation-name: floating;
+	/*animation-name: floating;
     animation-duration: 10s;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
-    animation-delay: 0.3s;
+    animation-delay: 0.3s;*/
 
     transition: background .7s, box-shadow 0.5s, transform 0.5s;
     transition-timing-function: ease;
@@ -142,11 +137,11 @@ nav {
 	text-align: center;
 	padding: 0px;
 
-	animation-name: floating2;
+	/*animation-name: floating2;
     animation-duration: 10s;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
-    animation-delay: 0.3s;
+    animation-delay: 0.3s;*/
 
     transition: all 0.5s;
     transition-timing-function: ease;
@@ -180,11 +175,11 @@ nav {
 	text-align: center;
 	padding: 0px;
 
-	animation-name: floating3;
+	/*animation-name: floating3;
     animation-duration: 10s;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
-    animation-delay: 0.3s;
+    animation-delay: 0.3s;*/
 
     transition: all 0.5s;
     transition-timing-function: ease;
